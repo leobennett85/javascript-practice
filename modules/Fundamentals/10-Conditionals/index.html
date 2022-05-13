@@ -44,13 +44,33 @@
         let accessAllowed;<br />
         <br />
         let age=prompt('How old is ya?', ''); <br />
-        if (age>18) { <br />
-        accessAllowed = true;<br />
-        } else { <br />
-        accessAllowed = false; }<br />
+        <strong>
+          if (age>18) { <br />
+          accessAllowed = true;<br />
+          } else { <br />
+          accessAllowed = false; }<br />
+        </strong>
         <br />
         alert(accessAllowed);
       </code>
     </p>
+
+    <p>
+      <strong>
+        The question mark operator (ternary) allows us to do this in an easier
+        way.
+      </strong>
+    </p>
+    <p>
+      The syntax is as follows: <br />
+      <code> let result = condition ? value1 : value2; </code>
+    </p>
+    <p>
+      The previous code can be re-written as:
+      <br />
+      <br />
+      let accessAllowed = age > 18 ? true : false;
+    </p>
+    <h2>Multiple '?'</h2>
   </body>
 </html>
