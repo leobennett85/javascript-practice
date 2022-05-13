@@ -72,5 +72,21 @@
       let accessAllowed = age > 18 ? true : false;
     </p>
     <h2>Multiple '?'</h2>
+    <p>
+      A sequence of question mark operators can return a value that depends on
+      more than one condition.
+    </p>
+    <p>
+      <code>
+        let age = prompt('age?', 18);<br />
+        <br />
+        let message = (age < 3) ? 'Hi, baby!':<br />
+        &nbsp;(age < 18) ? 'Hello!' :<br />
+        &nbsp;(age < 100) ? 'Greetings for one last time!':<br />
+        &nbsp;'What an unusual age';<br />
+        <br />
+        alert(message);
+      </code>
+    </p>
   </body>
 </html>
