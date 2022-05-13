@@ -4,7 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>10-Conditionals</title>
+    <script src="js.js"></script>
   </head>
-  <body></body>
+  <body>
+    <h1>10-Conditionals</h1>
+    <h2>The "if" statement</h2>
+    <p>Use the if statement to check conditions.</p>
+    <p>let year = prompt('What year was Leo born?", '');</p>
+    <p>if (year == 1985) alert('You are right!');</p>
+    <h2>Else clause</h2>
+    <p>Use the else clause to execute when the condition is false</p>
+    <p>
+      <code>
+        if (year == 1985) {
+        <br />alert("You got it!"); <br />} <strong>else</strong> {
+        <br />alert("WRONG!"); }
+      </code>
+    </p>
+
+    <h2>Elseif</h2>
+    <p>Use Elseif when you have several specific conditions to check</p>
+    <p>
+      <code>
+        if (year < 1985) { <br />
+        &#9;alert("Too early b'y!"); <br />
+        } <strong>else if</strong> (year > 1985) { <br />
+        alert("Too late b'y!"); <br />
+        } else { <br />
+        alert("Exactly!"); <br />
+        }
+      </code>
+    </p>
+
+    <h2>Conditional operator '?'</h2>
+    <p>Sometimes we assign a variable based on conditions</p>
+    <p>
+      <code>
+        let accessAllowed;<br />
+        <br />
+        let age=prompt('How old is ya?', ''); <br />
+        if (age>18) { <br />
+        accessAllowed = true;<br />
+        } else { <br />
+        accessAllowed = false; }<br />
+        <br />
+        alert(accessAllowed);
+      </code>
+    </p>
+  </body>
 </html>
