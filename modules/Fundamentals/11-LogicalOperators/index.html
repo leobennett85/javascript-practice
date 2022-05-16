@@ -4,7 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="js.js"></script>
+    <title>11-Logical Operators</title>
   </head>
-  <body></body>
+  <body>
+    <h1>11-Logical Operators</h1>
+
+    <h2>Task 1</h2>
+    <p>What is the result of OR</p>
+    <code> alert(null || 2 || undefined); </code>
+
+    <h2>Task 2</h2>
+    <p>What's the result of OR'ed alerts?</p>
+    <code>alert(alert(1) || 2 || alert(3));</code>
+
+    <h2>Task 3</h2>
+    <p>What is the result of AND?</p>
+    <code>alert(1 && null && 2);</code>
+
+    <h2>Task 4</h2>
+    <p>What is the result of AND'ed alerts?</p>
+    <code>alert(alert(1) && alert(2);</code>
+
+    <h2>Task 5</h2>
+    <p>The result of OR AND OR</p>
+    <code>alert(null || 2 && 3 || 40)</code>
+
+    <h2>Task 6</h2>
+    <h3>Check the range between:</h3>
+    <p>
+      Write an if condition to check that age is between 14 and 90
+      inclusively.<br />
+      “Inclusively” means that age can reach the edges 14 or 90.
+    </p>
+    <h2>Task 7</h2>
+    <h3>Check the range outside:</h3>
+    <p>
+      Write an if condition to check that age is NOT between 14 and 90
+      inclusively. <br />
+      Create two variants: the first one using NOT !, the second one – without
+      it.
+    </p>
+    <h2>Task 8</h2>
+    <h3>A question about "if"</h3>
+    <p>
+      Which of these alerts are going to execute? <br />
+      What will the results of the expressions be inside if(...)?
+    </p>
+
+    <code>
+      if (-1 || 0) alert( 'first' ); <br />
+      if (-1 && 0) alert( 'second' ); <br />
+      if (null || -1 && 1) alert( 'third' );<br />
+    </code>
+    <h2>Task 9</h2>
+    <h3>Check the login</h3>
+    <p>
+      Write the code which asks for a login with prompt.<br /><br />
+      If the visitor enters "Admin", then prompt for a password, if the input is
+      an empty line or Esc – show “Canceled”, if it’s another string – then show
+      “I don’t know you”. <br /><br />
+      The password is checked as follows: <br />
+      If it equals “TheMaster”, then show “Welcome!”, <br />
+      Another string – show “Wrong password”, <br />
+      For an empty string or cancelled input, show “Canceled”<br /><br />
+      Please use nested if blocks. Mind the overall readability of the code.<br />
+      Hint: passing an empty input to a prompt returns an empty string ''.
+      Pressing ESC during a prompt returns null.
+    </p>
+  </body>
 </html>
